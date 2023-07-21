@@ -1,0 +1,25 @@
+spring:
+  rabbitmq:
+    host: 118.31.104.131
+    port: 5672
+    virtual-host: /
+    username: wangliang
+    password: 928457
+    listener:
+      simple:
+        prefetch: 1   # 预先分配1个 能者多劳
+
+    publisher-confirm-type: correlated     # 开启确认机制
+
+
+ribbon:
+  eager-load:
+    enabled: true #开启饥饿加载提升第一次访问速度
+    clients:
+      - movie-service #指定开启服务
+
+feign:
+  httpclient:
+    enabled: true  # 开启httpClient开关,启动连接池,提升feign连接效率!
+    max-connections: 200  #最大连接数量
+    max-connections-per-route: 50  #单路径最大连接数

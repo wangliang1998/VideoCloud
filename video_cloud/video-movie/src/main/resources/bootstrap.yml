@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: movie-service
+  cloud:
+    nacos:
+      server-addr: 118.31.104.131:8848
+server:
+  port: 9002

@@ -1,0 +1,29 @@
+# 配置网关
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:8080"
+            allowedMethods:
+              - GET
+              - POST
+      routes:
+        - id: user-service           # 路由规则的名称，只要不重复即可，推荐写成服务名
+          uri: lb://user-service     # 路由的服务名称  lb:负载均衡
+          predicates:
+            - Path=/user/**  # 访问user路径转发用户服务  localhost:3000/user/**
+        - id: movie-service # 此名称随意定义
+          uri: lb://movie-service #使用负载均衡,调用服务名,这是服务名
+          predicates:
+            - Path=/movie/**
+        - id: jiexi-service
+          uri: lb://jiexi-service
+          predicates:
+            - Path=/jx/**
+        - id: spider-service
+          uri: lb://spider-service
+          predicates:
+            - Path=/spider/**
+

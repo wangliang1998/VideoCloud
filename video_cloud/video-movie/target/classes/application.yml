@@ -1,0 +1,45 @@
+spring:
+  # 连接池配置
+  datasource:
+    url: jdbc:mysql://172.19.12.77:8066/videoMovie?useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+  rabbitmq:
+    host: 172.19.12.77
+    port: 5672
+    virtual-host: /
+    username: wangliang
+    listener:
+      simple:
+        prefetch: 1   # 预先分配1个 能者多劳
+        acknowledge-mode: manual
+    password: 928457
+
+  redis:
+    host: 172.19.12.77
+    port: 6379
+    jedis:
+      pool:
+        max-wait: 2000ms
+        min-idle: 2
+        max-idle: 8
+        max-active: 10
+
+
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+
+pagehelper:
+  reasonable: true
+  support-methods-arguments: true
+  helperDialect: mysql
+
+ribbon:
+  eager-load:
+    enabled: true #开启饥饿加载提升第一次访问速度
+    clients:
+      - movie-service #指定开启服务
+

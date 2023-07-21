@@ -1,0 +1,9 @@
+com\video\user\UserApplication.class
+com\video\user\mapper\UserMapper.class
+com\video\user\pojo\Account.class
+com\video\user\controller\UserController.class
+com\video\user\interceptor\AdminInterceptor.class
+com\video\user\service\UserService.class
+com\video\user\config\intercepor.class
+com\video\user\util\Result.class
+com\video\user\interceptor\LoginInterceptor.class

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-gateway/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-gateway/src/main/resources/bootstrap.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-jiexi/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-jiexi/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-jiexi/src/main/resources/bootstrap.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-movie/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-movie/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-movie/src/main/resources/bootstrap.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-movie/src/main/resources/mappers/KindMapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-movie/src/main/resources/mappers/MovieMapper.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-spider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-spider/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-spider/src/main/resources/bootstrap.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-user/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/video-user/src/main/resources/bootstrap.yml" charset="UTF-8" />
+  </component>
+</project>

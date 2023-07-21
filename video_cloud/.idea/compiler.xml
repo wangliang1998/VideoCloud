@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="video-movie" />
+        <module name="video-user" />
+        <module name="video-spider" />
+        <module name="video-jiexi" />
+        <module name="video-gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="video-gateway" options="-parameters" />
+      <module name="video-jiexi" options="-parameters" />
+      <module name="video-movie" options="-parameters" />
+      <module name="video-spider" options="-parameters" />
+      <module name="video-user" options="-parameters" />
+      <module name="video_cloud" options="-parameters" />
+    </option>
+  </component>
+</project>

@@ -1,0 +1,32 @@
+spring:
+  # 连接池配置
+  datasource:
+    url: jdbc:mysql://118.31.104.131:3306/videoJiexi?useSSL=false&useUnicode=true&characterEncoding=UTF-8&allowPublicKeyRetrieval=true
+    username: root
+    password: 928457
+    driver-class-name: com.mysql.jdbc.Driver
+    type: com.alibaba.druid.pool.DruidDataSource
+
+
+  redis:
+    host: 118.31.104.131
+    port: 6379
+    jedis:
+      pool:
+        max-wait: 2000ms
+        min-idle: 2
+        max-idle: 8
+        max-active: 10
+    password: 928457
+
+
+mybatis:
+  mapper-locations: classpath:mappers/*.xml
+
+
+ribbon:
+  eager-load:
+    enabled: true #开启饥饿加载提升第一次访问速度
+    clients:
+      - movie-service #指定开启服务
+
